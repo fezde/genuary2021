@@ -1,0 +1,4 @@
+## Prompt
+> Triangle subdivision.
+
+## Idea

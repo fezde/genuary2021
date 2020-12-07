@@ -1,0 +1,4 @@
+## Prompt
+> No loops.
+
+## Idea
