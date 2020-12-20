@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>FEZ's #genuary2021</title>
+</head>
+
+<body>
+    <div id="maincontent">
+        <h1><a href="../index.html">#Genuary2021</a></h1>
+        <h2>January 5<sup>th</sup></h2>
+        <div class="prompt">
+            <h3>Prompt</h3>
+            <blockquote>
+                Do some code golf! How little code can you write to make something interesting? Share the sketch and its
+                code together if you can.
+            </blockquote>
+        </div>
+        <div class="interpretation">
+            <h3>Interpretation</h3>
+            "As little code" in Plingo translates as "as small an input picture as possible".<br />
+            The smallest possible image would have been a one-pixel-image. But the possibilities there are quite limited
+            (you can go for <span>add</span>, <span>substract</span>, or <span>invert</span> as commands), so I decided
+            to do a second, little more complex
+            program.<br />
+            This <strong>second</strong> program consists of a 4 by 3 pixels. All but the top left pixels are
+            initialized so they call
+            <span>noop</span> and thus do not change. The top left pixel is initialized with RGB(13, 1, 1) which
+            translates. This will make the first pixel "travel" one pixel down and to the right, switching the place
+            with the pixel that occupied that space before. This makes the pixel travel and shuffle the image at the
+            same time.<br />
+            as <span>swap_plus_plus(1,1)</span>
+        </div>
+
+        <div class="presentation">
+            <h3>Output 1</h3>
+            <h3>Output 2</h3>
+            <video autoplay controls>
+                <source src="05-golf.mp4" />
+            </video>
+            This video was created using <a
+                href="https://github.com/fezde/genuary2021/blob/main/code/05-Golf/05-golf.png" target="_blank">this
+                image</a> as an input. The video presented here has been scaled up a lot to make the code and its result
+            better viewable.<br />
+            The execution is basically (without the video creation): <span>plingo -i 1000 05-golf.png</span>
+        </div>
+
+        <div class="footer">
+            <hr width="66.6%" />
+            All output in this project was created by <a href="https://github.com/fezde" target="_blank">FEZ (Felix
+                Kratezr)</a>
+            using <a href="https://github.com/fezde/plingo" target="_blank">Plingo</a><br />
+            Big shout-out and thanks to the creators of <a href="https://genuary2021.github.io/"
+                target="_blank">#genuary2021</a>. If you want to see more about it, just check <a
+                href="https://twitter.com/search?q=%23genuary2021&src=typed_query&f=live" target="_blank">#genuary2021
+                on twitter</a>.
+        </div>
+    </div>
+</body>
+
+</html>
