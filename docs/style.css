@@ -117,10 +117,14 @@ td.ready {
     text-shadow: 0 0 3px #222, 0 0 10px #f90;
 }
 
-.presentation video {
-    float: left;
+.presentation video, .presentation img {
+
     margin-right: 10px;
     margin-bottom: 10px;
+}
+
+.presentation video.left {
+    float: left;
 }
 
 .explain-right {
