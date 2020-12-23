@@ -15,6 +15,10 @@ h1, h2 {
     text-align: center;
 }
 
+h2 sup {
+    font-size: 0.42em;
+}
+
 #maincontent {
     width: 70vw;
     margin: auto;
@@ -118,3 +122,16 @@ td.ready {
     margin-right: 10px;
     margin-bottom: 10px;
 }
+
+.explain-right {
+    float: right;
+    margin: 10px;
+    font-size: 0.7em;
+    text-align: center;
+    line-height: 0.8em;
+}
+.explain-right img {
+    clear: both;
+    height:200px;
+}
+
