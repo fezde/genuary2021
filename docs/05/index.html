@@ -24,18 +24,16 @@
             (you can go for <span>add</span>, <span>substract</span>, or <span>invert</span> as commands), so I decided
             to do a second, little more complex
             program.<br />
-            This <strong>second</strong> program consists of a 4 by 3 pixels. All but the top left pixels are
-            initialized so they call
+            This program consists of a 4 by 3 pixels. All but the top left pixels are initialized so they call
             <span>noop</span> and thus do not change. The top left pixel is initialized with RGB(13, 1, 1) which
-            translates. This will make the first pixel "travel" one pixel down and to the right, switching the place
-            with the pixel that occupied that space before. This makes the pixel travel and shuffle the image at the
-            same time.<br />
-            as <span>swap_plus_plus(1,1)</span>
+            translates as <span>swap_plus_plus(1,1)</span> . This will make the first pixel "travel" one pixel down and
+            to the right, switching the place with the pixel that occupied that space before. This makes the pixel
+            travel across the canvas while shuffling the rest of the image.<br />
+
         </div>
 
         <div class="presentation">
-            <h3>Output 1</h3>
-            <h3>Output 2</h3>
+
             <video autoplay controls>
                 <source src="05-golf.mp4" />
             </video>

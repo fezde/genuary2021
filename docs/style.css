@@ -94,11 +94,11 @@ td.ready {
 
 .prompt {
     float: left;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .interpretation {
     float: right;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .presentation {
     clear: both;
@@ -106,7 +106,7 @@ td.ready {
     font-family: monospace;
     font-size: 1.0em;
     line-height: 1.4em;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .prompt h3, .interpretation h3, .presentation h3 {
