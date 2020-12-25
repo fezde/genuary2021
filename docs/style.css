@@ -139,3 +139,17 @@ td.ready {
     height:200px;
 }
 
+
+.img17 {
+    clear: both;
+    width: 777px;
+    margin: 0 auto 0 auto;
+    padding: 0;
+}
+.img17 img {
+    width: 777px;
+    margin: 0;
+}
+.img17.mid img{
+    height: 0px;
+}
