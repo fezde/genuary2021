@@ -139,6 +139,14 @@ td.ready {
     height:200px;
 }
 
+#button {
+    margin: auto;
+    border: 1px solid white;
+    background: #342323;
+    padding:8px 24px 8px 24px;
+    border-radius: 6px;
+    box-shadow: 0 0 3px #222, 0 0 10px #f90;
+}
 
 .img17 {
     clear: both;
