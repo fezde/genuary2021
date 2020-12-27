@@ -60,7 +60,7 @@ th {
     padding-bottom: 10px;
 }
 
-td {
+.calendar td {
     height: 8vw;
     width: 10vw;
     border: 1px solid black;
@@ -68,11 +68,11 @@ td {
     text-align: center;
 }
 
-td.none {
+.calendar td.none {
     border: none;
 }
 
-td.ready {
+.calendar td.ready {
     font-weight: 900;
     background-color: #453434;
 }
@@ -125,6 +125,21 @@ td.ready {
 
 .presentation video.left {
     float: left;
+}
+
+.presentation td {
+    border: 1px solid black;
+    font-size: 1.2em;
+    text-align: center;
+}
+.presentation td.right {
+    text-align: right;
+}
+.presentation th {
+    border: 1px solid black;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
 }
 
 .explain-right {
