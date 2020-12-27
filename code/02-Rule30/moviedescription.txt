@@ -1,14 +1,6 @@
 # Start with a longer start frame
 file 'input.png'
-duration 0.03333
-file 'input.png'
-duration 0.03333
-file 'input.png'
-duration 0.03333
-file 'input.png'
-duration 0.03333
-file 'input.png'
-duration 0.03333
+duration 3
 
 # Now iterate over the results
 file 'output/02.png_out_000.png'
