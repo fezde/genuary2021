@@ -1,7 +1,14 @@
+*.pyc
+
 code/01-NestedLoops/output/*
 code/01-NestedLoops/*.mp4
 
 code/02-Rule30/output/02*
+
+code/03-SomethingHuman/config.py
+code/03-SomethingHuman/temp.jpg
+code/03-SomethingHuman/used_concepts.json
+code/03-SomethingHuman/output/*
 
 code/05-Golf/05-golf.gif
 code/05-Golf/05-golf.mp4

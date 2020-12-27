@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>FEZ's #genuary2021</title>
+</head>
+
+<body>
+    <div id="maincontent">
+        <h1><a href="../index.html">#Genuary2021</a></h1>
+        <h2>05 - </h2>
+        <div class="prompt">
+            <h3>Prompt</h3>
+            <blockquote>
+                Make something human.
+            </blockquote>
+        </div>
+        <div class="interpretation">
+            <h3>Interpretation</h3>
+            <p>
+                Creating something human using a language such as <a href="https://github.com/fezde/plingo"
+                    target="_blank">Plingo</a> seemed not possible to me.
+                So I created a tool-chain that emulates one of the most important <span>human</span> abilities - at
+                least to my understanding - <span>associative thinking</span>.
+            </p>
+            <p>
+                It starts with an image selected by me. From this point on, the implementation does the following:
+            <ul>
+                <li>Run the image in Plingo</li>
+                <li>Use an AI to analyze the resulting image</li>
+                <li>Take the most prominent concept (<i>association</i>) and select the next image using this concept
+                </li>
+                <li>REPEAT</li>
+            </ul>
+            Everything but the selection of the first image is done using APIs. No real-human interaction included.
+            </p>
+            <p>
+                The AI used is <a href="https://www.clarifai.com/" target="_blank">clarifai</a><br />
+                All images are provided by <a href="https://unsplash.com" target="_blank">unsplash</a> (Credits next to
+                the image)
+            </p>
+        </div>
+        <div class="presentation">
+            <p align="center>">
+            <table>
+                <tr>
+                    <th valign="bottom">Concept extracted from plingo image</th>
+                    <th valign="bottom">Image found for concept</th>
+                    <th valign="bottom">Image after executing plingo</th>
+                    <th valign="bottom">Image credits</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><a href='000.png'><img src='000.png' height='200' /></a></td>
+                    <td><a href='000.png'><img src='000.png_out.png' height='200' /></a></td>
+                    <td><span>Photo by <a
+                                href="https://unsplash.com/@awesome?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Ashes
+                                Sitoula</a> on <a
+                                href="https://unsplash.com/s/photos/associative-thinking?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+                    </td>
+                </tr>
+                <!--replaceme-->
+            </table>
+            </p>
+        </div>
+
+        <div class="footer">
+            <hr width="66.6%" />
+            All output in this project was created by <a href="https://github.com/fezde" target="_blank">FEZ (Felix
+                Kratezr)</a>
+            using <a href="https://github.com/fezde/plingo" target="_blank">Plingo</a><br />
+            Big shout-out and thanks to the creators of <a href="https://genuary2021.github.io/"
+                target="_blank">#genuary2021</a>. If you want to see more about it, just check <a
+                href="https://twitter.com/search?q=%23genuary2021&src=typed_query&f=live" target="_blank">#genuary2021
+                on twitter</a>.
+        </div>
+    </div>
+</body>
+
+</html>
