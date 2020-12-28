@@ -136,6 +136,15 @@ th {
 .presentation td.right {
     text-align: right;
 }
+.presentation td.left {
+    text-align: left;
+}
+.presentation td.none {
+    border: none;
+}
+.presentation td img{
+    margin:0;
+}
 .presentation th {
     border: 1px solid black;
     font-size: 1.5em;
