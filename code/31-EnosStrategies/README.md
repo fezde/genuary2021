@@ -6,3 +6,6 @@
 > ```
 
 ## Idea
+
+"Discover the recipes you are using and abandon them.",
+https://github.com/sansumbrella/Processing-ObliqueStrategies/blob/master/src/com/sansumbrella/StrategyList.java
