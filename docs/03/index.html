@@ -1,0 +1,406 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>FEZ's #genuary2021</title>
+</head>
+
+<body>
+    <div id="maincontent">
+        <h1><a href="../index.html">#Genuary2021</a></h1>
+        <h2>05 - </h2>
+        <div class="prompt">
+            <h3>Prompt</h3>
+            <blockquote>
+                Make something human.
+            </blockquote>
+        </div>
+        <div class="interpretation">
+            <h3>Interpretation</h3>
+            <p>
+                Creating something human using a language such as <a href="https://github.com/fezde/plingo"
+                    target="_blank">Plingo</a> seemed not possible to me.
+                So I created a tool-chain that emulates one of the most important <span>human</span> abilities - at
+                least to my understanding - <span>associative thinking</span>.
+            </p>
+            <p>
+                It starts with an image selected by me. From this point on, the implementation does the following:
+            <ul>
+                <li>Run the image in Plingo</li>
+                <li>Use an AI to analyze the resulting image</li>
+                <li>Take the most prominent concept (<i>association</i>) and select the next image using this concept
+                </li>
+                <li>REPEAT</li>
+            </ul>
+            Everything but the selection of the first image is done using APIs. No real-human interaction included.
+            </p>
+            <p>
+                The AI used is <a href="https://www.clarifai.com/" target="_blank">clarifai</a><br />
+                All images are provided by <a href="https://unsplash.com" target="_blank">unsplash</a> (Credits next to
+                the image)
+            </p>
+        </div>
+        <div class="presentation">
+            <p align="center>">
+            <table>
+                <tr>
+                    <th valign="bottom">Input concept from previous round</th>
+                    <th valign="bottom">Image found for concept</th>
+                    <th valign="bottom">Image after executing plingo</th>
+                    <th valign="bottom">Concept extraced from image after plingo</th>
+                    <th valign="bottom">Image credits</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><a href='000.png'><img src='000.png' height='200' /></a></td>
+                    <td><a href='000.png'><img src='000.png_out.png' height='200' /></a></td>
+                    <td valign='center' class='left'>desktop --&gt;</td>
+                    <td><span>Photo by <a
+                                href="https://unsplash.com/@awesome?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Ashes
+                                Sitoula</a> on <a
+                                href="https://unsplash.com/s/photos/associative-thinking?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td valign='center' class='right'>desktop --&gt;</td>
+                    <td><a href='001.png'><img src='001.png' height='200' /></a></td>
+                    <td><a href='001.png'><img src='001.png_out.png' height='200' /></a></td>
+                    <td valign='center' class='left'>texture --&gt;</td>
+                    <td><span>Photo by <a href="https://unsplash.com/@xps" target="_blank">XPS</a> on <a
+                                href="https://unsplash.com/photos/g2E2NQ5SWSU" target="_blank">Unsplash</a></span></td>
+                </tr>
+                <tr>
+                    <td valign='center' class='right'>texture --&gt;</td>
+                    <td><a href='002.png'><img src='002.png' height='200' /></a></td>
+                    <td><a href='002.png'><img src='002.png_out.png' height='200' /></a></td>
+                    <td valign='center' class='left'>abstract --&gt;</td>
+                    <td><span>Photo by <a href="https://unsplash.com/@pawel_czerwinski" target="_blank">Paweł
+                                Czerwiński</a> on <a href="https://unsplash.com/photos/8uZPynIu-rQ"
+                                target="_blank">Unsplash</a></span></td>
+                </tr>
+                <tr>
+                    <td valign='center' class='right'>abstract --&gt;</td>
+                    <td><a href='003.png'><img src='003.png' height='200' /></a></td>
+                    <td><a href='003.png'><img src='003.png_out.png' height='200' /></a></td>
+                    <td valign='center' class='left'>pattern --&gt;</td>
+                    <td><span>Photo by <a href="https://unsplash.com/@pawel_czerwinski" target="_blank">Paweł
+                                Czerwiński</a> on <a href="https://unsplash.com/photos/ruJm3dBXCqw"
+                                target="_blank">Unsplash</a></span></td>
+                </tr>
+                <tr>
+                    <td valign='center' class='right'>pattern --&gt;</td>
+                    <td><a href='004.png'><img src='004.png' height='200' /></a></td>
+                    <td><a href='004.png'><img src='004.png_out.png' height='200' /></a></td>
+                    <td valign='center' class='left'>fabric --&gt;</td>
+                    <td><span>Photo by <a href="https://unsplash.com/@omarg247" target="_blank">Omar Flores</a> on <a
+                                href="https://unsplash.com/photos/lQT_bOWtysE" target="_blank">Unsplash</a></span></td>
+                </tr>
+                <tr>
+                    <td valign='center' class='right'>fabric --&gt;</td>
+                    <td><a href='005.png'><img src='005.png' height='200' /></a></td>
+                    <td><a href='005.png'><img src='005.png_out.png' height='200' /></a></td>
+                    <td valign='center' class='left'>art --&gt;</td>
+                    <td><span>Photo by <a href="https://unsplash.com/@melipoole" target="_blank">Mel Poole</a> on <a
+                                href="https://unsplash.com/photos/4byBtNuIyIg" target="_blank">Unsplash</a></span></td>
+                </tr>
+                <tr>
+                    <td valign='center' class='right'>art --&gt;</td>
+                    <td><a href='006.png'><img src='006.png' height='200' /></a></td>
+                    <td><a href='006.png'><img src='006.png_out.png' height='200' /></a></td>
+                    <td valign='center' class='left'>wall --&gt;</td>
+                    <td><span>Photo by <a href="https://unsplash.com/@timon_k" target="_blank">Timon Klauser</a> on <a
+                                href="https://unsplash.com/photos/3MAmj1ZKSZA" target="_blank">Unsplash</a></span></td>
+                </tr>
+                <tr>
+                    <td valign='center' class='right'>wall --&gt;</td>
+                    <td><a href='007.png'><img src='007.png' height='200' /></a></td>
+                    <td><a href='007.png'><img src='007.png_out.png' height='200' /></a></td>
+                    <td valign='center' class='left'>background --&gt;</td>
+                    <td><span>Photo by <a href="https://unsplash.com/@woods" target="_blank">Joe Woods</a> on <a
+                                href="https://unsplash.com/photos/4Zaq5xY5M_c" target="_blank">Unsplash</a></span></td>
+                </tr>
+                <tr>
+                    <td valign='center' class='right'>background --&gt;</td>
+                    <td><a href='008.png'><img src='008.png' height='200' /></a></td>
+                    <td><a href='008.png'><img src='008.png_out.png' height='200' /></a></td>
+                    <td valign='center' class='left'>textile --&gt;</td>
+                    <td><span>Photo by <a href="https://unsplash.com/@wrightbrand" target="_blank">Wright Brand
+                                Bacon</a> on <a href="https://unsplash.com/photos/VVtVBLKkrik"
+                                target="_blank">Unsplash</a></span></td>
+                </tr>
+                <tr>
+                    <td valign='center' class='right'>textile --&gt;</td>
+                    <td><a href='009.png'><img src='009.png' height='200' /></a></td>
+                    <td><a href='009.png'><img src='009.png_out.png' height='200' /></a></td>
+                    <td valign='center' class='left'>road --&gt;</td>
+                    <td><span>Photo by <a href="https://unsplash.com/@enginakyurt" target="_blank">engin akyurt</a> on
+                            <a href="https://unsplash.com/photos/SpIg9HoZjPE" target="_blank">Unsplash</a></span></td>
+                </tr>
+                <tr>
+                    <td valign='center' class='right'>road --&gt;</td>
+                    <td><a href='010.png'><img src='010.png' height='200' /></a></td>
+                    <td><a href='010.png'><img src='010.png_out.png' height='200' /></a></td>
+                    <td valign='center' class='left'>nature --&gt;</td>
+                    <td><span>Photo by <a href="https://unsplash.com/@withluke" target="_blank">Luke Stackpoole</a> on
+                            <a href="https://unsplash.com/photos/ZRsJmpt9pNI" target="_blank">Unsplash</a></span></td>
+                </tr>
+                <tr>
+                    <td valign='center' class='right'>nature --&gt;</td>
+                    <td><a href='011.png'><img src='011.png' height='200' /></a></td>
+                    <td><a href='011.png'><img src='011.png_out.png' height='200' /></a></td>
+                    <td valign='center' class='left'>old --&gt;</td>
+                    <td><span>Photo by <a href="https://unsplash.com/@samsungmemory" target="_blank">Samsung Memory</a>
+                            on <a href="https://unsplash.com/photos/kx8cwnWEc_o" target="_blank">Unsplash</a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign='center' class='right'>old --&gt;</td>
+                    <td><a href='012.png'><img src='012.png' height='200' /></a></td>
+                    <td><a href='012.png'><img src='012.png_out.png' height='200' /></a></td>
+                    <td valign='center' class='left'>water --&gt;</td>
+                    <td><span>Photo by <a href="https://unsplash.com/@mbennettphoto" target="_blank">Matthew Bennett</a>
+                            on <a href="https://unsplash.com/photos/78hTqvjYMS4" target="_blank">Unsplash</a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign='center' class='right'>water --&gt;</td>
+                    <td><a href='013.png'><img src='013.png' height='200' /></a></td>
+                    <td><a href='013.png'><img src='013.png_out.png' height='200' /></a></td>
+                    <td valign='center' class='left'>color --&gt;</td>
+                    <td><span>Photo by <a href="https://unsplash.com/@boxedwater" target="_blank">Boxed Water Is
+                                Better</a> on <a href="https://unsplash.com/photos/TQu7xEV0YOo"
+                                target="_blank">Unsplash</a></span></td>
+                </tr>
+                <tr>
+                    <td valign='center' class='right'>color --&gt;</td>
+                    <td><a href='014.png'><img src='014.png' height='200' /></a></td>
+                    <td><a href='014.png'><img src='014.png_out.png' height='200' /></a></td>
+                    <td valign='center' class='left'>canvas --&gt;</td>
+                    <td><span>Photo by <a href="https://unsplash.com/@pawel_czerwinski" target="_blank">Paweł
+                                Czerwiński</a> on <a href="https://unsplash.com/photos/3k9PGKWt7ik"
+                                target="_blank">Unsplash</a></span></td>
+                </tr>
+                <tr>
+                    <td valign='center' class='right'>canvas --&gt;</td>
+                    <td><a href='015.png'><img src='015.png' height='200' /></a></td>
+                    <td><a href='015.png'><img src='015.png_out.png' height='200' /></a></td>
+                    <td valign='center' class='left'>dirty --&gt;</td>
+                    <td><span>Photo by <a href="https://unsplash.com/@justynwarner" target="_blank">Justyn Warner</a> on
+                            <a href="https://unsplash.com/photos/VH8w75u3LE0" target="_blank">Unsplash</a></span></td>
+                </tr>
+                <tr>
+                    <td valign='center' class='right'>dirty --&gt;</td>
+                    <td><a href='016.png'><img src='016.png' height='200' /></a></td>
+                    <td><a href='016.png'><img src='016.png_out.png' height='200' /></a></td>
+                    <td valign='center' class='left'>urban --&gt;</td>
+                    <td><span>Photo by <a href="https://unsplash.com/@eiskonen" target="_blank">Hans Eiskonen</a> on <a
+                                href="https://unsplash.com/photos/D9TK2X0Nj-U" target="_blank">Unsplash</a></span></td>
+                </tr>
+                <tr>
+                    <td valign='center' class='right'>urban --&gt;</td>
+                    <td><a href='017.png'><img src='017.png' height='200' /></a></td>
+                    <td><a href='017.png'><img src='017.png_out.png' height='200' /></a></td>
+                    <td valign='center' class='left'>Earth surface --&gt;</td>
+                    <td><span>Photo by <a href="https://unsplash.com/@matteocatanese" target="_blank">Matteo
+                                Catanese</a> on <a href="https://unsplash.com/photos/PI8Hk-3ZcCU"
+                                target="_blank">Unsplash</a></span></td>
+                </tr>
+                <tr>
+                    <td valign='center' class='right'>Earth surface --&gt;</td>
+                    <td><a href='018.png'><img src='018.png' height='200' /></a></td>
+                    <td><a href='018.png'><img src='018.png_out.png' height='200' /></a></td>
+                    <td valign='center' class='left'>football --&gt;</td>
+                    <td><span>Photo by <a href="https://unsplash.com/@nasa" target="_blank">NASA</a> on <a
+                                href="https://unsplash.com/photos/Q1p7bh3SHj8" target="_blank">Unsplash</a></span></td>
+                </tr>
+                <tr>
+                    <td valign='center' class='right'>football --&gt;</td>
+                    <td><a href='019.png'><img src='019.png' height='200' /></a></td>
+                    <td><a href='019.png'><img src='019.png_out.png' height='200' /></a></td>
+                    <td valign='center' class='left'>space --&gt;</td>
+                    <td><span>Photo by <a href="https://unsplash.com/@jesusance" target="_blank">Thomas Serer</a> on <a
+                                href="https://unsplash.com/photos/r-xKieMqL34" target="_blank">Unsplash</a></span></td>
+                </tr>
+                <tr>
+                    <td valign='center' class='right'>space --&gt;</td>
+                    <td><a href='020.png'><img src='020.png' height='200' /></a></td>
+                    <td><a href='020.png'><img src='020.png_out.png' height='200' /></a></td>
+                    <td valign='center' class='left'>wallpaper --&gt;</td>
+                    <td><span>Photo by <a href="https://unsplash.com/@jeremythomasphoto" target="_blank">Jeremy
+                                Thomas</a> on <a href="https://unsplash.com/photos/E0AHdsENmDg"
+                                target="_blank">Unsplash</a></span></td>
+                </tr>
+                <tr>
+                    <td valign='center' class='right'>wallpaper --&gt;</td>
+                    <td><a href='021.png'><img src='021.png' height='200' /></a></td>
+                    <td><a href='021.png'><img src='021.png_out.png' height='200' /></a></td>
+                    <td valign='center' class='left'>design --&gt;</td>
+                    <td><span>Photo by <a href="https://unsplash.com/@wrightbrand" target="_blank">Wright Brand
+                                Bacon</a> on <a href="https://unsplash.com/photos/VVtVBLKkrik"
+                                target="_blank">Unsplash</a></span></td>
+                </tr>
+                <tr>
+                    <td valign='center' class='right'>design --&gt;</td>
+                    <td><a href='022.png'><img src='022.png' height='200' /></a></td>
+                    <td><a href='022.png'><img src='022.png_out.png' height='200' /></a></td>
+                    <td valign='center' class='left'>retro --&gt;</td>
+                    <td><span>Photo by <a href="https://unsplash.com/@boxedwater" target="_blank">Boxed Water Is
+                                Better</a> on <a href="https://unsplash.com/photos/IG4hajNkbvM"
+                                target="_blank">Unsplash</a></span></td>
+                </tr>
+                <tr>
+                    <td valign='center' class='right'>retro --&gt;</td>
+                    <td><a href='023.png'><img src='023.png' height='200' /></a></td>
+                    <td><a href='023.png'><img src='023.png_out.png' height='200' /></a></td>
+                    <td valign='center' class='left'>brush --&gt;</td>
+                    <td><span>Photo by <a href="https://unsplash.com/@lorenzoherrera" target="_blank">Lorenzo
+                                Herrera</a> on <a href="https://unsplash.com/photos/p0j-mE6mGo4"
+                                target="_blank">Unsplash</a></span></td>
+                </tr>
+                <tr>
+                    <td valign='center' class='right'>brush --&gt;</td>
+                    <td><a href='024.png'><img src='024.png' height='200' /></a></td>
+                    <td><a href='024.png'><img src='024.png_out.png' height='200' /></a></td>
+                    <td valign='center' class='left'>artistic --&gt;</td>
+                    <td><span>Photo by <a href="https://unsplash.com/@happy_lollipop" target="_blank">Zuzana</a> on <a
+                                href="https://unsplash.com/photos/B6EOE4ouiAc" target="_blank">Unsplash</a></span></td>
+                </tr>
+                <tr>
+                    <td valign='center' class='right'>artistic --&gt;</td>
+                    <td><a href='025.png'><img src='025.png' height='200' /></a></td>
+                    <td><a href='025.png'><img src='025.png_out.png' height='200' /></a></td>
+                    <td valign='center' class='left'>rock --&gt;</td>
+                    <td><span>Photo by <a href="https://unsplash.com/@shyshkina" target="_blank">Tetiana SHYSHKINA</a>
+                            on <a href="https://unsplash.com/photos/yn7R3DLA-ik" target="_blank">Unsplash</a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign='center' class='right'>rock --&gt;</td>
+                    <td><a href='026.png'><img src='026.png' height='200' /></a></td>
+                    <td><a href='026.png'><img src='026.png_out.png' height='200' /></a></td>
+                    <td valign='center' class='left'>sand --&gt;</td>
+                    <td><span>Photo by <a href="https://unsplash.com/@zoltantasi" target="_blank">Zoltan Tasi</a> on <a
+                                href="https://unsplash.com/photos/QxjEi8Fs9Hg" target="_blank">Unsplash</a></span></td>
+                </tr>
+                <tr>
+                    <td valign='center' class='right'>sand --&gt;</td>
+                    <td><a href='027.png'><img src='027.png' height='200' /></a></td>
+                    <td><a href='027.png'><img src='027.png_out.png' height='200' /></a></td>
+                    <td valign='center' class='left'>rough --&gt;</td>
+                    <td><span>Photo by <a href="https://unsplash.com/@thehmstravels" target="_blank">Heather Shevlin</a>
+                            on <a href="https://unsplash.com/photos/3B_NrzTjajc" target="_blank">Unsplash</a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign='center' class='right'>rough --&gt;</td>
+                    <td><a href='028.png'><img src='028.png' height='200' /></a></td>
+                    <td><a href='028.png'><img src='028.png_out.png' height='200' /></a></td>
+                    <td valign='center' class='left'>painting --&gt;</td>
+                    <td><span>Photo by <a href="https://unsplash.com/@plhrmnn" target="_blank">Paul Hermann</a> on <a
+                                href="https://unsplash.com/photos/jeiqzOgwwKU" target="_blank">Unsplash</a></span></td>
+                </tr>
+                <tr>
+                    <td valign='center' class='right'>painting --&gt;</td>
+                    <td><a href='029.png'><img src='029.png' height='200' /></a></td>
+                    <td><a href='029.png'><img src='029.png_out.png' height='200' /></a></td>
+                    <td valign='center' class='left'>paper --&gt;</td>
+                    <td><span>Photo by <a href="https://unsplash.com/@steve_j" target="_blank">Steve Johnson</a> on <a
+                                href="https://unsplash.com/photos/e5LdlAMpkEw" target="_blank">Unsplash</a></span></td>
+                </tr>
+                <tr>
+                    <td valign='center' class='right'>paper --&gt;</td>
+                    <td><a href='030.png'><img src='030.png' height='200' /></a></td>
+                    <td><a href='030.png'><img src='030.png_out.png' height='200' /></a></td>
+                    <td valign='center' class='left'>mess --&gt;</td>
+                    <td><span>Photo by <a href="https://unsplash.com/@marjan_blan" target="_blank">Марьян Блан |
+                                @marjanblan</a> on <a href="https://unsplash.com/photos/_kUxT8WkoeY"
+                                target="_blank">Unsplash</a></span></td>
+                </tr>
+                <tr>
+                    <td valign='center' class='right'>mess --&gt;</td>
+                    <td><a href='031.png'><img src='031.png' height='200' /></a></td>
+                    <td><a href='031.png'><img src='031.png_out.png' height='200' /></a></td>
+                    <td valign='center' class='left'>impression --&gt;</td>
+                    <td><span>Photo by <a href="https://unsplash.com/@ricardoviana" target="_blank">Ricardo Viana</a> on
+                            <a href="https://unsplash.com/photos/-tYsPFKMm7g" target="_blank">Unsplash</a></span></td>
+                </tr>
+                <tr>
+                    <td valign='center' class='right'>impression --&gt;</td>
+                    <td><a href='032.png'><img src='032.png' height='200' /></a></td>
+                    <td><a href='032.png'><img src='032.png_out.png' height='200' /></a></td>
+                    <td valign='center' class='left'>no person --&gt;</td>
+                    <td><span>Photo by <a href="https://unsplash.com/@philhearing" target="_blank">Phil Hearing</a> on
+                            <a href="https://unsplash.com/photos/ROJIiSdZHus" target="_blank">Unsplash</a></span></td>
+                </tr>
+                <tr>
+                    <td valign='center' class='right'>no person --&gt;</td>
+                    <td><a href='033.png'><img src='033.png' height='200' /></a></td>
+                    <td><a href='033.png'><img src='033.png_out.png' height='200' /></a></td>
+                    <td valign='center' class='left'>vintage --&gt;</td>
+                    <td><span>Photo by <a href="https://unsplash.com/@niklasfotografics"
+                                target="_blank">niklasfotografics</a> on <a
+                                href="https://unsplash.com/photos/8o_7oa1Rn_U" target="_blank">Unsplash</a></span></td>
+                </tr>
+                <tr>
+                    <td valign='center' class='right'>vintage --&gt;</td>
+                    <td><a href='034.png'><img src='034.png' height='200' /></a></td>
+                    <td><a href='034.png'><img src='034.png_out.png' height='200' /></a></td>
+                    <td valign='center' class='left'>construction --&gt;</td>
+                    <td><span>Photo by <a href="https://unsplash.com/@ajeetmestry" target="_blank">Ajeet Mestry</a> on
+                            <a href="https://unsplash.com/photos/UBhpOIHnazM" target="_blank">Unsplash</a></span></td>
+                </tr>
+                <tr>
+                    <td valign='center' class='right'>construction --&gt;</td>
+                    <td><a href='035.png'><img src='035.png' height='200' /></a></td>
+                    <td><a href='035.png'><img src='035.png_out.png' height='200' /></a></td>
+                    <td valign='center' class='left'>landscape --&gt;</td>
+                    <td><span>Photo by <a href="https://unsplash.com/@sunburned_surveyor" target="_blank">Scott
+                                Blake</a> on <a href="https://unsplash.com/photos/x-ghf9LjrVg"
+                                target="_blank">Unsplash</a></span></td>
+                </tr>
+                <tr>
+                    <td valign='center' class='right'>landscape --&gt;</td>
+                    <td><a href='036.png'><img src='036.png' height='200' /></a></td>
+                    <td><a href='036.png'><img src='036.png_out.png' height='200' /></a></td>
+                    <td valign='center' class='left'>crack --&gt;</td>
+                    <td><span>Photo by <a href="https://unsplash.com/@boxedwater" target="_blank">Boxed Water Is
+                                Better</a> on <a href="https://unsplash.com/photos/jbcY_yvsDzk"
+                                target="_blank">Unsplash</a></span></td>
+                </tr>
+                <tr>
+                    <td valign='center' class='right'>crack --&gt;</td>
+                    <td><a href='037.png'><img src='037.png' height='200' /></a></td>
+                    <td><a href='037.png'><img src='037.png_out.png' height='200' /></a></td>
+                    <td valign='center' class='left'>soil --&gt;</td>
+                    <td><span>Photo by <a href="https://unsplash.com/@brina_blum" target="_blank">Brina Blum</a> on <a
+                                href="https://unsplash.com/photos/nqttZgQZFyc" target="_blank">Unsplash</a></span></td>
+                </tr>
+                <tr>
+                    <td valign='center' class='right'>soil --&gt;</td>
+                    <td><a href='038.png'><img src='038.png' height='200' /></a></td>
+                    <td><a href='038.png'><img src='038.png_out.png' height='200' /></a></td>
+                    <td valign='center' class='right'></td>
+                    <td><span>Photo by <a href="https://unsplash.com/@gabrielj_photography" target="_blank">Gabriel
+                                Jimenez</a> on <a href="https://unsplash.com/photos/jin4W1HqgL4"
+                                target="_blank">Unsplash</a></span></td>
+                </tr>
+            </table>
+            </p>
+        </div>
+
+        <div class="footer">
+            <hr width="66.6%" />
+            All output in this project was created by <a href="https://github.com/fezde" target="_blank">FEZ (Felix
+                Kratezr)</a>
+            using <a href="https://github.com/fezde/plingo" target="_blank">Plingo</a><br />
+            Big shout-out and thanks to the creators of <a href="https://genuary2021.github.io/"
+                target="_blank">#genuary2021</a>. If you want to see more about it, just check <a
+                href="https://twitter.com/search?q=%23genuary2021&src=typed_query&f=live" target="_blank">#genuary2021
+                on twitter</a>.
+        </div>
+    </div>
+</body>
+
+</html>

@@ -32,8 +32,9 @@ with open(image_file, "rb") as f:
 channel = ClarifaiChannel.get_insecure_grpc_channel()
 metadata = (('authorization', f'Key {clarifai_api_key}'),)
 
-stub = service_pb2_grpc.V2Stub(channel)
+print(f"Requesting data from clarifai using {image_file}")
 
+stub = service_pb2_grpc.V2Stub(channel)
 post_model_outputs_response = stub.PostModelOutputs(
     service_pb2.PostModelOutputsRequest(
         model_id=model_general,
@@ -50,23 +51,39 @@ post_model_outputs_response = stub.PostModelOutputs(
     ),
     metadata=metadata
 )
-
+print("Data received")
 if post_model_outputs_response.status.code != status_code_pb2.SUCCESS:
     raise Exception("Post model outputs failed, status: " + post_model_outputs_response.status.description)
 
 possible_concepts = [x.name for x in post_model_outputs_response.outputs[0].data.concepts if x.name not in used_concepts]
-if len(possible_concepts) > 0:
-    new_concept = possible_concepts[0]
-    used_concepts.append(new_concept)
-else:
-    new_concept = post_model_outputs_response.outputs[0].data.concepts[0].name
-print(possible_concepts)
-print(f"new concept: {new_concept}")
+print(f"Possible concepts: {possible_concepts}")
 
 
 unsplash_auth = Auth(unsplash_api_key, unsplash_secret, "", code="")
 unsplash_api = Api(unsplash_auth)
-result = unsplash_api.search.photos(new_concept)
+
+found_something = False
+concept_idx = 0
+
+while not found_something:
+    if len(possible_concepts) > 0:
+        new_concept = possible_concepts[concept_idx]
+        used_concepts.append(new_concept)
+    else:
+        new_concept = post_model_outputs_response.outputs[0].data.concepts[0].name
+    print(f"new concept: {new_concept}")
+
+    result = unsplash_api.search.photos(new_concept)
+    if len(result["results"]) > 0:
+        found_something = True
+    else:
+        concept_idx += 1
+        if concept_idx < len(possible_concepts)-1:
+            print("Did not find something trying next concept")
+        else:
+            print("Out of concepts")
+            sys.exit(-1)
+
 photo_id = result["results"][0].id
 print(photo_id)
 photo = unsplash_api.photo.get(photo_id)
@@ -99,5 +116,4 @@ with open("output/table.html", "a+") as fh:
 with open("used_concepts.json", "w") as fh:
     json.dump(used_concepts, fh)
 
-
-sleep(61)
+print(f"Done with iteration {current_step}")
