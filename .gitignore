@@ -17,6 +17,14 @@ code/07-FollowTheRules/md_*.txt
 code/07-FollowTheRules/output_*/*
 code/07-FollowTheRules/*.mp4
 
+code/09-Interference/output/*
+code/09-Interference/*.txt
+code/09-Interference/*.mp4
+
+code/12-API/config.py
+code/12-API/12.png_out_*.png.txt
+code/12-API/12.png_out_*.png
+
 code/17-Line/output/*
 
 code/24-500Lines/*_out_???.png
