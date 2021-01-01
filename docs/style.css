@@ -48,23 +48,23 @@ blockquote:before {
     vertical-align: -0.4em;
   }
 
-table {
+table.calendar {
     width: 70vw;
     border-collapse: collapse;
 }
 
 th {
-    height: 5vw;
+    height: 7em;
     font-family: monospace;
     font-size: 1vw;
     padding-bottom: 10px;
 }
 
 .calendar td {
-    height: 8vw;
-    width: 10vw;
+    height: 4em;
+    width: 9em;
     border: 1px solid black;
-    font-size: 2vw;
+    font-size: 4em;
     text-align: center;
 }
 
@@ -171,6 +171,10 @@ th {
     padding:8px 24px 8px 24px;
     border-radius: 6px;
     box-shadow: 0 0 3px #222, 0 0 10px #f90;
+}
+
+.img09 {
+    margin: 10px !important;
 }
 
 .img17 {
