@@ -21,9 +21,12 @@ code/09-Interference/output/*
 code/09-Interference/*.txt
 code/09-Interference/*.mp4
 
+code/10-Tree/output/*.png
+
 code/12-API/config.py
 code/12-API/12.png_out_*.png.txt
 code/12-API/12.png_out_*.png
+code/12-API/12.png.txt
 
 code/17-Line/output/*
 
