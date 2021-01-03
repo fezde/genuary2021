@@ -129,7 +129,9 @@ th {
 .presentation video.left {
     float: left;
 }
-
+.presentation.center {
+   text-align: center;
+}
 
 .presentation td {
     border: 1px solid black;
