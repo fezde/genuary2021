@@ -13,6 +13,8 @@ code/03-SomethingHuman/output/*
 code/05-Golf/05-golf.gif
 code/05-Golf/05-golf.mp4
 
+code/06-TriangleSubdivision/output/*.png
+
 code/07-FollowTheRules/md_*.txt
 code/07-FollowTheRules/output_*/*
 code/07-FollowTheRules/*.mp4
