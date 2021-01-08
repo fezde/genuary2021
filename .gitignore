@@ -28,6 +28,8 @@ code/09-Interference/*.mp4
 code/10-Tree/output/*.png
 code/10-Tree/md_*.txt
 
+code/11-NoneComputer/output/*.png
+
 code/12-API/config.py
 code/12-API/12.png_out_*.png.txt
 code/12-API/12.png_out_*.png
@@ -36,3 +38,6 @@ code/12-API/12.png.txt
 code/17-Line/output/*
 
 code/24-500Lines/*_out_???.png
+
+code/28-Sound/output/*.png
+code/28-Sound/output/*.wav
